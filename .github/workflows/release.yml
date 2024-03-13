@@ -1,0 +1,29 @@
+name: Release & Publiish to NPM
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install the dependancies
+        run: npm ci
+      - name: Initialize Git user.email
+        run: git config --global user.email "zxin088@gmail.com"
+      - name: Initialize Git user.name
+        run: git config --global user.name "Release Workflow"
+      - name: Initialize the NPM config
+        run: npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+        env:
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: Run release
+        run: npm run release
+        env:
+          GITHUB_TOKEN: ${{secrets.GHP_TOKEN}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: End message
+        run: echo 'All done!'

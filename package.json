@@ -1,0 +1,70 @@
+{
+  "name": "postcss-dynamic-pixel",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "基于“视窗宽度”动态调整CSS像素值",
+  "author": "OSpoon zxin088@gmail.com",
+  "license": "MIT",
+  "homepage": "https://github.com/OSpoon/postcss-dynamic-pixel#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OSpoon/postcss-dynamic-pixel.git"
+  },
+  "bugs": "https://github.com/OSpoon/postcss-dynamic-pixel/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "adapt": "adapt-pkg --boot",
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "release": "release-it",
+    "start": "esno src/index.ts",
+    "test": "vitest",
+    "test:ci": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepare": "simple-git-hooks"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^1.0.0-beta.22",
+    "@release-it/conventional-changelog": "^7.0.2",
+    "@types/node": "^20.8.3",
+    "adapt-pkg": "^0.0.2",
+    "eslint": "^8.51.0",
+    "esno": "^0.17.0",
+    "lint-staged": "^14.0.1",
+    "release-it": "^16.1.5",
+    "rimraf": "^5.0.5",
+    "simple-git-hooks": "^2.9.0",
+    "typescript": "^5.2.2",
+    "unbuild": "^2.0.0",
+    "vitest": "^0.34.6"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
