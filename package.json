@@ -46,6 +46,9 @@
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"
   },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.13.0"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^1.0.0-beta.22",
     "@release-it/conventional-changelog": "^7.0.2",
