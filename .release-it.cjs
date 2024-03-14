@@ -1,8 +1,8 @@
 /* eslint-disable no-template-curly-in-string */
 module.exports = {
   hooks: {
-    'before:init': ['npm run typecheck', 'npm run test:ci'],
-    'after:bump': 'npm run build',
+    'before:init': ['npm run typecheck', 'npm run build'],
+    'after:bump': 'npm run test:ci',
   },
   git: {
     commitMessage: 'chore: release v${version}',
