@@ -135,5 +135,3 @@ export function dynamicPixel(opts?: DynamicPixelOptions): Plugin {
     },
   }
 }
-
-export const postcss = true

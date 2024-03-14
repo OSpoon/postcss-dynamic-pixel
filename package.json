@@ -44,7 +44,8 @@
     "test": "vitest",
     "test:ci": "vitest run",
     "typecheck": "tsc --noEmit",
-    "prepare": "simple-git-hooks"
+    "prepare": "simple-git-hooks",
+    "example": "vite --open"
   },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "^4.13.0"
@@ -53,6 +54,7 @@
     "@antfu/eslint-config": "^1.0.0-beta.22",
     "@release-it/conventional-changelog": "^7.0.2",
     "@types/node": "^20.8.3",
+    "@vitejs/plugin-vue": "^5.0.4",
     "adapt-pkg": "^0.0.2",
     "eslint": "^8.51.0",
     "esno": "^0.17.0",
@@ -61,9 +63,11 @@
     "release-it": "^16.1.5",
     "rimraf": "^5.0.5",
     "simple-git-hooks": "^2.9.0",
-    "typescript": "^5.2.2",
+    "typescript": "^5.4.2",
     "unbuild": "^2.0.0",
-    "vitest": "^0.34.6"
+    "vite": "^5.1.6",
+    "vitest": "^0.34.6",
+    "vue-tsc": "^2.0.6"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
