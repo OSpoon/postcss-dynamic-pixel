@@ -1,7 +1,7 @@
 {
   "name": "postcss-dynamic-pixel",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "基于“视窗宽度”动态调整CSS像素值",
   "author": "OSpoon zxin088@gmail.com",
   "license": "MIT",

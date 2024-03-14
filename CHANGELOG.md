@@ -1,5 +1,13 @@
 
 
+## [0.1.1](https://github.com/OSpoon/postcss-dynamic-pixel/compare/0.1.0...0.1.1) (2024-03-14)
+
+
+### Bug Fixes
+
+* 修复一些小问题 ([7cd1a22](https://github.com/OSpoon/postcss-dynamic-pixel/commit/7cd1a226afe27368b410da90d94ecb53555997de))
+* 简单的一些调整 ([a334cfe](https://github.com/OSpoon/postcss-dynamic-pixel/commit/a334cfea1e6e614a87b0146c4db99ca8ed143114))
+
 # [0.1.0](https://github.com/OSpoon/postcss-dynamic-pixel/compare/0.0.1...0.1.0) (2024-03-14)
 
 
