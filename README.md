@@ -62,6 +62,16 @@ module.exports = {
 npm run example
 ```
 
+## Compatibility
+
+[clamp](https://caniuse.com/?search=clamp)
+![image](https://github.com/OSpoon/postcss-dynamic-pixel/assets/10126623/077ca3f9-4a91-482f-aee5-fb287dcdd25f)
+
+
+[calc](https://caniuse.com/?search=calc)
+![image](https://github.com/OSpoon/postcss-dynamic-pixel/assets/10126623/9fda3cb8-edfb-4b1e-bd1b-11c8600a6d33)
+
+
 ## License
 
 [MIT](./LICENSE) License © 2024-PRESENT [OSpoon](https://github.com/OSpoon)
