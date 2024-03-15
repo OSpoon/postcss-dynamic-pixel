@@ -4,6 +4,8 @@
 
 ## Idea
 
+[Uniform UI viewport scaling demo](https://codepen.io/gbnikolov/pen/oNZRNQR)
+
 [掘金付费小册《现代 Web 布局 · 大漠 著》如何像素级完美还原一个可缩放的 UI 界面？章节的 PostCSS 插件实现](https://juejin.cn/book/7161370789680250917/section/7165496907714789407#heading-14)
 
 ### 重点摘录:
