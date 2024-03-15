@@ -64,13 +64,15 @@ npm run example
 
 ## Compatibility
 
-[clamp](https://caniuse.com/?search=clamp)
-![image](https://github.com/OSpoon/postcss-dynamic-pixel/assets/10126623/077ca3f9-4a91-482f-aee5-fb287dcdd25f)
+[![image](https://github.com/OSpoon/postcss-dynamic-pixel/assets/10126623/077ca3f9-4a91-482f-aee5-fb287dcdd25f)](https://caniuse.com/?search=clamp)
 
+[![image](https://github.com/OSpoon/postcss-dynamic-pixel/assets/10126623/9fda3cb8-edfb-4b1e-bd1b-11c8600a6d33)](https://caniuse.com/?search=calc)
 
-[calc](https://caniuse.com/?search=calc)
-![image](https://github.com/OSpoon/postcss-dynamic-pixel/assets/10126623/9fda3cb8-edfb-4b1e-bd1b-11c8600a6d33)
+## Thanks
 
+https://juejin.cn/user/1908407916041614
+
+https://github.com/evrone/postcss-px-to-viewport
 
 ## License
 
