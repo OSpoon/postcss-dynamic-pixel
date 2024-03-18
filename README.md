@@ -40,17 +40,46 @@ npm install postcss postcss-dynamic-pixel --save-dev
 
 ```JavaScript
 // ./postcss.config.cjs
-const { dynamicPixel } = require('postcss-dynamic-pixel')
-
 module.exports = {
-    plugins: [
-        dynamicPixel({
-            idealViewportWidth: 750,
-            currentViewportWidth: 100,
-            minViewportWidth: 320,
-            maxViewportWidth: 1440,
-        })
-    ]
+  plugins: {
+    'postcss-dynamic-pixel': {
+      idealViewportWidth: 750,
+      currentViewportWidth: 100,
+      minViewportWidth: 320,
+      maxViewportWidth: 1440,
+    },
+  },
+}
+```
+
+## All Options
+
+```typescript
+export interface DynamicPixelOptions {
+  /* 理想视窗宽度,设计稿宽度，按像素值设置，但省略单位（px） */
+  idealViewportWidth?: number
+  /* 当前视窗宽度，按视口值设置，但省略单位（vw） */
+  currentViewportWidth?: number
+
+  /* 最小视窗宽度，按像素值设置，但省略单位（px） */
+  minViewportWidth?: number
+  /* 最大视窗宽度，按像素值设置，但省略单位（px） */
+  maxViewportWidth?: number
+
+  /* 理想的字体大小，按像素值设置，但省略单位（px） */
+  idealFontSize?: number
+
+  /* 是否替换原有值 */
+  replace?: boolean
+
+  /* 跳过的属性列表 */
+  skipProps?: string[]
+  /* 跳过的选择器列表 */
+  skipSelectors?: string[] | RegExp[]
+  /* 是否处理媒体查询中的像素值 */
+  mediaQuery?: boolean
+  /* 排除文件列表 */
+  exclude?: RegExp
 }
 ```
 
