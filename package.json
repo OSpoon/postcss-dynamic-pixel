@@ -1,7 +1,7 @@
 {
   "name": "postcss-dynamic-pixel",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "基于“视窗宽度”动态调整CSS像素值",
   "author": "OSpoon zxin088@gmail.com",
   "license": "MIT",
@@ -11,7 +11,13 @@
     "url": "git+https://github.com/OSpoon/postcss-dynamic-pixel.git"
   },
   "bugs": "https://github.com/OSpoon/postcss-dynamic-pixel/issues",
-  "keywords": ["postcss-plugin", "postcss", "pixel", "responsive", "px"],
+  "keywords": [
+    "postcss-plugin",
+    "postcss",
+    "pixel",
+    "responsive",
+    "px"
+  ],
   "sideEffects": false,
   "exports": {
     ".": {
