@@ -87,7 +87,7 @@ function skipFiles(rule: Rule | undefined, exclude: RegExp | undefined) {
     return exclude.test(file)
 }
 
-export function dynamicPixel(opts?: DynamicPixelOptions): Plugin {
+export default function dynamicPixel(opts?: DynamicPixelOptions): Plugin {
   const options = Object.assign({}, defaultOptions, opts)
   return {
     postcssPlugin: 'postcss-dynamic-pixel',

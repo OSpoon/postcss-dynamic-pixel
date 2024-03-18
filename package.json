@@ -11,17 +11,14 @@
     "url": "git+https://github.com/OSpoon/postcss-dynamic-pixel.git"
   },
   "bugs": "https://github.com/OSpoon/postcss-dynamic-pixel/issues",
-  "keywords": [],
+  "keywords": ["postcss-plugin", "postcss", "pixel", "responsive", "px"],
   "sideEffects": false,
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
     }
   },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "typesVersions": {
     "*": {
@@ -47,6 +44,9 @@
     "prepare": "simple-git-hooks",
     "example": "vite --open"
   },
+  "peerDependencies": {
+    "postcss": "^8.0.0"
+  },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "^4.13.0"
   },
@@ -59,7 +59,6 @@
     "eslint": "^8.51.0",
     "esno": "^0.17.0",
     "lint-staged": "^14.0.1",
-    "postcss": "^8.4.35",
     "release-it": "^16.1.5",
     "rimraf": "^5.0.5",
     "simple-git-hooks": "^2.9.0",
