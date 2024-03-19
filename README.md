@@ -7,7 +7,7 @@ Use [postcss-dynamic-pixel](https://github.com/OSpoon/postcss-dynamic-pixel) to 
 ## Formula：
 
 ```bash
-实际像素 = 设计稿UI尺寸 * 视口宽度 / 设计稿宽度
+Actual pixel = Design Draft UI size * viewport width / Design draft width
 ```
 
 | Design Draft UI size        | viewport width | Design draft width | Actual pixel    |
@@ -44,29 +44,29 @@ module.exports = {
 
 ```javascript
 export interface DynamicPixelOptions {
-  /* 理想视窗宽度,设计稿宽度，按像素值设置，但省略单位（px） */
+  /* Ideal window width, design width, set by pixel value, but omit unit (px) */
   idealViewportWidth?: number
-  /* 当前视窗宽度，按视口值设置，但省略单位（vw） */
+  /* Current window width, set by viewport value, but omit unit (vw) */
   currentViewportWidth?: number
 
-  /* 最小视窗宽度，按像素值设置，但省略单位（px） */
+  /* Minimum window width, set by pixel value but omit unit (px) */
   minViewportWidth?: number
-  /* 最大视窗宽度，按像素值设置，但省略单位（px） */
+  /* Maximum window width, set by pixel value but omit unit (px) */
   maxViewportWidth?: number
 
-  /* 理想的字体大小，按像素值设置，但省略单位（px） */
+  /* Ideal font size, set by pixel value, but omit the unit (px) */
   idealFontSize?: number
 
-  /* 是否替换原有值 */
+  /* Whether to replace the original value */
   replace?: boolean
 
-  /* 跳过的属性列表 */
+  /* A list of skipped properties */
   skipProps?: string[]
-  /* 跳过的选择器列表 */
+  /* Skip a list of selectors */
   skipSelectors?: string[] | RegExp[]
-  /* 是否处理媒体查询中的像素值 */
+  /* Whether to process pixel values in media queries */
   mediaQuery?: boolean
-  /* 排除文件列表 */
+  /* Excluded file list */
   exclude?: RegExp
 }
 ```
