@@ -4,6 +4,10 @@
 
 Use [postcss-dynamic-pixel](https://github.com/OSpoon/postcss-dynamic-pixel) to achieve pixel-level UI scaling without adding any burden.
 
+[中文文档](./README_zh.md)
+
+[英语文档](./README.md)
+
 ## Formula：
 
 ```bash
