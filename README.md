@@ -6,8 +6,6 @@ Use [postcss-dynamic-pixel](https://github.com/OSpoon/postcss-dynamic-pixel) to 
 
 [中文文档](./README_zh.md)
 
-[English](./README.md)
-
 ## Formula：
 
 ```bash
