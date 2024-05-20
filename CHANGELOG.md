@@ -1,5 +1,13 @@
 
 
+## [0.1.4](https://github.com/OSpoon/postcss-dynamic-pixel/compare/0.1.3...0.1.4) (2024-05-20)
+
+
+### Bug Fixes
+
+* handle negative ([6704ec0](https://github.com/OSpoon/postcss-dynamic-pixel/commit/6704ec074fc5c33febd47211db4bf0a1fe9ed022))
+* 移除无效模块 ([e9c9785](https://github.com/OSpoon/postcss-dynamic-pixel/commit/e9c9785d8f8f60167dc1b517adcddb3b51732789))
+
 ## [0.1.3](https://github.com/OSpoon/postcss-dynamic-pixel/compare/0.1.2...0.1.3) (2024-03-22)
 
 ## [0.1.2](https://github.com/OSpoon/postcss-dynamic-pixel/compare/0.1.1...0.1.2) (2024-03-18)
