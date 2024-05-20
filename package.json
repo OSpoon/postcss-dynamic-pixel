@@ -38,7 +38,6 @@
     "dist"
   ],
   "scripts": {
-    "adapt": "adapt-pkg --boot",
     "build": "unbuild",
     "dev": "unbuild --stub",
     "lint": "eslint .",
@@ -61,7 +60,6 @@
     "@release-it/conventional-changelog": "^7.0.2",
     "@types/node": "^20.8.3",
     "@vitejs/plugin-vue": "^5.0.4",
-    "adapt-pkg": "^0.0.2",
     "eslint": "^8.51.0",
     "esno": "^0.17.0",
     "lint-staged": "^14.0.1",
