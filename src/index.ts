@@ -28,7 +28,7 @@ export interface DynamicPixelOptions {
 }
 
 const UNIT = 'px'
-const UNIT_REGEXP = new RegExp(`"[^"]+"|'[^']+'|url\\([^\\)]+\\)|(\\d*\\.?\\d+)${UNIT}`, 'g')
+const UNIT_REGEXP = new RegExp(`"[^"]+"|'[^']+'|url\\([^\\)]+\\)|(\\-?\\d*\\.?\\d+)${UNIT}`, 'g')
 
 const DEFAULT_IDEAL_VIEWPORT_WIDTH = 1920
 const DEFAULT_CURRENT_VIEWPORT_WIDTH = 100
