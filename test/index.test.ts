@@ -95,4 +95,19 @@ describe('should all pass 😄', () => {
     const result = await postcss([dynamicPixel()]).process(``)
     expect(result.css).toEqual('')
   })
+
+  it('minus postion', async () => {
+    const result = await postcss([dynamicPixel()]).process(`.simple-class { postion: absolute; top: -50px;}`)
+    expect(result.css).toEqual('.simple-class { postion: absolute; top: calc( -50 * (clamp(768px, 100vw, 2560px) / 1920) );}')
+  })
+
+  it('minus box-shadow', async () => {
+    const result = await postcss([dynamicPixel()]).process(`.simple-class {box-shadow: 60px -16px teal;}`)
+    expect(result.css).toEqual('.simple-class {box-shadow: calc( 60 * (clamp(768px, 100vw, 2560px) / 1920) ) calc( -16 * (clamp(768px, 100vw, 2560px) / 1920) ) teal;}')
+  })
+
+  it('minus with calc', async () => {
+    const result = await postcss([dynamicPixel()]).process(`.simple-class { font-size: calc( 16 - 1px ); }`)
+    expect(result.css).toEqual('.simple-class { font-size: calc( 16 - calc( 1 * (clamp(768px, 100vw, 2560px) / 1920) ) ); }')
+  })
 })
